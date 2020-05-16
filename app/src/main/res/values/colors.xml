@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8694C7</color>
+    <color name="colorPrimaryDark">#626D96</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="background">#FFFFFF</color>
+    <color name="darker_background">#C8C9CF</color>
+
+    <color name="error_red">#FF0000</color>
+
+    <color name="text_white_background">#005c8b</color>
+
+    <color name="toolbar">#8694C7</color>
+    <color name="buttons">#8694C7</color>
+    <color name="button_text">#FFFFFF</color>
+
+    <color name="color_next">#6EB670</color>
+    <color name="color_previous">#FF6262</color>
+    <color name="color_inactive">#CECECE</color>
+
+    <color name="text_dark">#000000</color>
+
+
+
+</resources>

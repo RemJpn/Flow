@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/waves_background_1920x1280"
+    tools:context=".MainActivity"
+    android:id="@+id/activity_main">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/sample_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Main message"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/text_white_background"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/bouton_start"
+        style="@style/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp"
+        android:drawableLeft="@drawable/play_18x18"
+        android:drawablePadding="5dp"
+
+        android:text="@string/start" />
+
+
+    <Button
+        android:id="@+id/button_add"
+        style="@style/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:drawableLeft="@drawable/plus_18x18"
+        android:drawablePadding="5dp"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/bouton_stop"
+        style="@style/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp"
+        android:drawableLeft="@drawable/stop_18x18"
+        android:drawablePadding="5dp"
+        android:text="@string/stop" />
+
+    <Button
+        android:id="@+id/bouton_results"
+        style="@style/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:drawableLeft="@drawable/line_chart_18x18"
+        android:drawablePadding="5dp"
+
+        android:text="@string/results" />
+
+    <Button
+        android:id="@+id/bouton_debug"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="71dp"
+        android:text="Debug"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/bouton_deletedb"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:text="Delete DB"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/button_csv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="9dp"
+        android:text="CSV"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/next_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="45dp"
+        android:text="No alarm set"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

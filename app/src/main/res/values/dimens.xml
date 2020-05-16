@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="feel_table_first_column_weight">52</integer>
+    <integer name="feel_table_other_column_weight">12</integer>
+    <integer name="feel_table_radiogroup_weight">48</integer>   <!-- 4 times the other columns-->
+
+</resources>

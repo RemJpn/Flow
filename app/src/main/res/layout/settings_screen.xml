@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_title"
+    />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_day"
+        />
+
+    <TimePicker
+        android:id="@+id/edit_start_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:layout_marginStart="-30dp"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="-30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_day"
+        />
+    <TimePicker
+        android:id="@+id/edit_end_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:layout_marginStart="-30dp"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="-30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nb_samples"
+        />
+    <EditText
+        android:id="@+id/edit_nb_samples"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="40"/>
+
+
+    <CheckBox
+        android:id="@+id/use_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/use_gps"
+        android:visibility="gone"
+        />
+
+
+    <Button
+        android:id="@+id/bouton_start_notifications"
+        style="@style/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp"
+
+        android:text="@string/start_notifications" />
+
+
+
+
+</LinearLayout>

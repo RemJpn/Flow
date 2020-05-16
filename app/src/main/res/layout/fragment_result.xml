@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Results.ResultFragment">
+
+    <ScrollView
+        android:id="@+id/result_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+            <TextView
+            android:id="@+id/nb_of_samples"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/results_text"
+            />
+
+
+            <!--..............................What?.....................................-->
+
+            <LinearLayout
+                android:id="@+id/what_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/what_arrow_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/arrow_down_float"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/what_arrow_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/arrow_up_float"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/what"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/divider_horizontal_textfield"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/top_what"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top 3 what"
+                style="@style/results_text"
+                android:visibility="gone"
+                />
+
+
+            <!--..............................Who?.....................................-->
+
+            <LinearLayout
+                android:id="@+id/who_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/who_arrow_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/arrow_down_float"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/who_arrow_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/arrow_up_float"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/who"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/divider_horizontal_textfield"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_alone"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/top_who"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top 3 who"
+                style="@style/results_text"
+                android:visibility="gone"
+                />
+
+            <!--..............................Where?.....................................-->
+
+            <LinearLayout
+                android:id="@+id/where_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/where_arrow_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/arrow_down_float"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/where_arrow_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/arrow_up_float"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/where"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/divider_horizontal_textfield"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/top_where"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top 3 where"
+                style="@style/results_text"
+                android:visibility="gone"
+                />
+
+            <!--..............................Why?.....................................-->
+
+            <LinearLayout
+                android:id="@+id/why_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/why_arrow_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/arrow_down_float"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/why_arrow_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/arrow_up_float"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/why"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/divider_horizontal_textfield"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_why"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:visibility="gone"/>
+
+
+            <!--..............................When?.....................................-->
+
+            <LinearLayout
+                android:id="@+id/when_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/when_arrow_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/arrow_down_float"
+                    android:padding="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/when_arrow_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@android:drawable/arrow_up_float"
+                    android:visibility="gone" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/when"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/divider_horizontal_textfield"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/best_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/best_day"
+                style="@style/results_text"
+                android:paddingBottom="-30dp"
+                android:visibility="gone"
+                />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/days_barchart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+             />
+
+
+
+
+            <!--..............................Detail results button.....................................-->
+            <Button
+                android:id="@+id/button_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detailed_results"
+                style="@style/buttons"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/details_18x18"
+                android:drawablePadding="5dp"
+                />
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

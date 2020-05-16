@@ -1,0 +1,127 @@
+
+
+<resources>
+    <string name="app_name">Flow Test</string>
+
+    <!-- Accueil -->
+    <string name="start">Nouveau test de Flow</string>
+    <string name="stop">Arrêter le test</string>
+    <string name="add">Répondre maintenant</string>
+    <string name="results">Résultats</string>
+    <string name="settings">Réglages</string>
+    <string name="press_return">Appuyer une deuxième fois sur retour pour quitter</string>
+    <string name="counter1">Test en cours :</string>
+    <string name="counter2">échantillons enregistrés</string>
+    <string name="stop_confirmation">Êtes-vous sûr de vouloir arrêter le test en cours?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="welcome">Bienvenue dans Flow test! \n\nCette application va vous aider à identifier les conditions qui vous amène à un état de Flow.\n\nCommencez un nouveau test de Flow, et l\'application vous enverra des questionnaires à intervalles aléatoires, afin de mesurer votre niveau de Flow!</string>
+    <string name="started">Le test a commencé!\nL\'application va bientôt vous envoyer des notification aléatoires.\n\nRépondez aux questionnaires quand vous pouvez après avoir reçu une notification!</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Choisissez les éléments suivant:</string>
+    <string name="start_day">- Début de votre journée:</string>
+    <string name="end_day">- Fin de votre journée:</string>
+    <string name="nb_samples">- Nombre d\'échantillons</string>
+    <string name="use_gps">Autoriser l\'application à enregistrer vos données GPS</string>
+    <string name="start_notifications">Commencer le test de Flow!</string>
+    <string name="toastStart">Test de Flow démarré!</string>
+
+    <!-- Notifications -->
+    <string name="channel_id">channel_id</string>
+    <string name="channel_name">Flow_channel</string>
+    <string name="channel_description">This is the channel used by Flow Test</string>
+    <string name="notifTitre">Decouvrez ce qui vous met en Flow!</string>
+    <string name="notifText1">"Répondez au questionnaire numéro "</string>
+    <string name="notifText2"> </string>
+
+
+    <!--Sample -->
+    <string name="sample_01_when_notif">Quand vous avez reçu la notification&#8230;</string>
+    <string name="sample_02_where"><b>Où</b> étiez vous ?</string>
+    <string name="sample_03_what">Quel était la <b>principale chose</b> que vous étiez en train de <b>faire</b> ?</string>
+    <string name="sample_04_what_else"><b>Que faisiez vous d\'autre</b> au même moment ?</string>
+    <string name="sample_05_mind">A quoi <b>pensiez vous</b> ?</string>
+
+    <string name="sample_11_alone">Etiez vous seul(e) ?</string>
+    <string name="sample_12_alone_yes">Oui</string>
+    <string name="sample_13_alone_no">Non</string>
+    <string name="sample_14_or_with">&#8230; ou étiez vous avec&#8230; (choisir toutes les réponses applicables)</string>
+    <string name="sample_15_spouse">votre conjoint(e)</string>
+    <string name="sample_16_boss">votre chef</string>
+    <string name="sample_17_coworker">vos collègues</string>
+    <string name="sample_18_friends">ami(e)(s)</string>
+    <string name="sample_19_girl_boyfriend">petit(e) ami(e)</string>
+    <string name="sample_20_mother">votre mère</string>
+    <string name="sample_21_father">votre père</string>
+    <string name="sample_22_teacher">professeur(e)</string>
+    <string name="sample_23_classmate">camarade(s) de classe</string>
+    <string name="sample_24_other">autre(s)</string>
+    <string name="sample_25_children">votre(vos) enfant(s)</string>
+    <string name="sample_26_children_who">(indiquez qui)</string>
+    <string name="sample_27_siblings">votre(vos) frère(s)/soeur(s)</string>
+    <string name="sample_28_siblings_who">(indiquez qui)</string>
+
+    <string name="sample_41_why_activity1">Repensez à comment vous en êtes venu(e) à cette activité&#8230;</string>
+    <string name="sample_42_why_activity2">Faisiez vous cette <b>activité principale</b> car vous&#8230;</string>
+    <string name="sample_43_wanted">(1) le vouliez</string>
+    <string name="sample_44_had">(2) deviez le faire</string>
+    <string name="sample_45_nothing_else">(3) n\'aviez rien d\'autre à faire</string>
+
+    <string name="sample_51_how_felt">Indiquez comment vous vous sentiez par rapport à l\'activité principale.</string>
+    <string name="sample_52_not_at_all">Pas du tout</string>
+    <string name="sample_53_little">Un peu</string>
+    <string name="sample_54_somewhat">Assez</string>
+    <string name="sample_55_very_much">Très</string>
+    <string name="sample_56_enjoy"><b>Appréciiez-vous</b> ce que vous faisiez ?</string>
+    <string name="sample_57_interesting">Cette activité était-elle <b>intéressante</b> ?</string>
+    <string name="sample_58_concentrating">Dans quelle mesure étiez vous <b>concentré(e)</b> ?</string>
+    <string name="sample_59_expectations">Etiez vous à la hauteur de <b>vos propres attentes</b> ?</string>
+    <string name="sample_60_control">Vous sentiez vous <b>au contôle</b> de la situation ?</string>
+    <string name="sample_61_involved">La situation vous permettait-elle d\'être <b>impliqué(e)</b> ou <b>d\'agir</b> ?</string>
+    <string name="sample_62_deal">Aviez-vous les <b>capacités de faire face</b> à la situation ?</string>
+    <string name="sample_63_important">L\'activité était-elle <b>importante pour vous</b> ?</string>
+    <string name="sample_64_others_expectations">Les autres <b>attendaient-ils</b> beaucoup de vous ?</string>
+    <string name="sample_65_succeeding">Etiez-vous en train de <b>réussir</b> ce que vous faisiez ?</string>
+    <string name="sample_66_something_else">Souhaitiez-vous <b>faire autre chose</b> ?</string>
+    <string name="sample_67_feel_good">Vous <b>sentiez-vous bien</b> dans votre peau ?</string>
+
+    <string name="autofill">Soyez précis(e)</string>
+    <string name="bouton_previous">Précédent</string>
+    <string name="bouton_next">Suivant</string>
+    <string name="bouton_finish">Terminé</string>
+
+    <string name="error_data_incomplete">Merci de répondre à toutes les questions</string>
+
+    <!-- AlertDialog Survey end-->
+    <string name="survey_end_title">Test de Flow terminé!</string>
+    <!--<string name="survey_end_prompt">Do you want to see the results?</string>-->
+    <string name="survey_end_seeresults">Voir les résultats</string>
+    <string name="survey_end_later">Plus tard</string>
+    <string name="send_results">Voulez vous envoyer les résultats afin d\'aider à améliorer l\'application?</string>
+
+
+    <!-- Saving -->
+    <string name="save_complete">Questionnaire enregistré</string>
+    <string name="save_error">Erreur lors de l\'enregistrement du questionnaire</string>
+    <string name="save_cancelled">Enregistrement annulé</string>
+
+
+    <!-- Results-->
+    <string name="detailed_results">Résultats détaillés</string>
+    <string name="number_of_samples">"Nombre d'échantillons = "</string>
+    <string name="what">Quoi ?</string>
+    <string name="top_what">Les choses que vous faisiez lorsque vous étiez le plus dans le Flow:</string>
+    <string name="who">Avec qui ?</string>
+    <string name="top_who">Les personnes avec qui vous étiez lorsque vous étiez le plus dans le Flow:</string>
+    <string name="where">Où ?</string>
+    <string name="top_where">Les endroits où vous étiez lorsque vous étiez le plus dans le Flow:</string>
+    <string name="why">Pourquoi ?</string>
+    <string name="when">Quand ?</string>
+    <string name="best_day">"Index de Flow par jour de la semaine: "</string>
+    <string name="alone">Seul(e)</string>
+
+    <!-- Detailed results-->
+    <string name="date">Date: </string>
+
+</resources>
