@@ -8,11 +8,17 @@
 
     <color name="error_red">#FF0000</color>
 
-    <color name="text_white_background">#005c8b</color>
+    <color name="text_white_background">#434f79</color><!-- was 005c8b -->
 
-    <color name="toolbar">#8694C7</color>
-    <color name="buttons">#8694C7</color>
+    <color name="toolbar">#5F70AC</color> <!-- was 5F70AC -->
+    <color name="buttons">#5F70AC</color>
+    <color name="text_buttons">#FFFFFF</color>
+
+    <color name="white_blue">#f3fdff</color>
     <color name="button_text">#FFFFFF</color>
+
+    <color name="light_gray">#E3E3E3</color>
+
 
     <color name="color_next">#6EB670</color>
     <color name="color_previous">#FF6262</color>

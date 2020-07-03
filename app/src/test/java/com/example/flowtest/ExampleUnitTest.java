@@ -1,4 +1,4 @@
-package com.example.flowtest;
+package com.RS.flowtest;
 
 import org.junit.Test;
 

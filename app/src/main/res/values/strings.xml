@@ -2,6 +2,7 @@
     <string name="app_name">Flow Test</string>
 
     <!-- Accueil -->
+    <string name="info">info</string>
     <string name="start">New Flow test</string>
     <string name="stop">Stop the test</string>
     <string name="add">Answer now</string>
@@ -20,7 +21,7 @@
     <string name="settings_title">Select the following:</string>
     <string name="start_day">- Start of your day:</string>
     <string name="end_day">- End of your day:</string>
-    <string name="nb_samples">- Number of samples</string>
+    <string name="nb_samples">- Number of samples:</string>
     <string name="use_gps">Allow the app to record GPS data</string>
     <string name="start_notifications">Start the Flow test!</string>
     <string name="toastStart">Flow test started!</string>
@@ -98,6 +99,12 @@
     <string name="survey_end_later">Later</string>
     <string name="send_results">Do you want to send the results in order to help improve the app?</string>
 
+    <!-- AlertDialog Intermediate-->
+    <string name="intermediate_title">Almost there!</string>
+    <string name="intermediate_prompt">Do you want to see your preliminary results?</string>
+    <string name="intermediate_seeresults">See Results</string>
+    <string name="intermediate_later">Later</string>
+
 
     <!-- Saving -->
     <string name="save_complete">Questionnaire recorded</string>
@@ -121,5 +128,22 @@
 
     <!-- Detailed results-->
     <string name="date">Date: </string>
+
+
+    <!-- Info Popup-->
+    <string name="popup_what_flow_title">What is Flow?</string>
+    <string name="popup_what_flow"><b>Flow</b> is the mental state in which a person performing an activity is <b>fully immersed</b> in a feeling of energized focus, full involvement, and enjoyment in the process of the activity. \n\nIn essence, flow is characterized by the complete absorption in what one does, and a resulting <b>transformation in one\'s sense of time</b>. </string>
+
+    <string name="notsureyet">Flow is important both because it makes the present instant <b>more enjoyable</b>, and because it <b>builds the self-confidence</b> that allows us to develop skills and make significant contributions to humankind.</string>
+
+    <string name="popup_why_flow_title">Why identify you Flow conditions?</string>
+    <string name="popup_why_flow">People who learn to control inner experience will be able to <b>determine</b> the quality of their lives, which is as close as any of us can come to <b>being happy</b>.</string>
+
+    <string name="popup_further_title">To go further</string>
+    <string name="popup_further">Reading list:
+        \n\n - <a href='https://amzn.to/2YKnleQ'>Drive: The Surprising Truth About What Motivates Us</a> by Daniel H Pink
+        \n\n - <a href='https://amzn.to/2AjGdb8'>Flow: The Psychology of Optimal Experience</a> by Mihály Csíkszentmihályi
+    </string>
+    <string name="popup_close">Close</string>
 
 </resources>

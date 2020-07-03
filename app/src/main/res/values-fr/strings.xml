@@ -1,9 +1,8 @@
-
-
 <resources>
     <string name="app_name">Flow Test</string>
 
     <!-- Accueil -->
+    <string name="info">info</string>
     <string name="start">Nouveau test de Flow</string>
     <string name="stop">Arrêter le test</string>
     <string name="add">Répondre maintenant</string>
@@ -100,6 +99,11 @@
     <string name="survey_end_later">Plus tard</string>
     <string name="send_results">Voulez vous envoyer les résultats afin d\'aider à améliorer l\'application?</string>
 
+    <!-- AlertDialog Intermediate-->
+    <string name="intermediate_title">Vous y êtes presque!</string>
+    <string name="intermediate_prompt">Voulez vous voir vos résultats preliminaires?</string>
+    <string name="intermediate_seeresults">Voir les résultats</string>
+    <string name="intermediate_later">Plus tard</string>
 
     <!-- Saving -->
     <string name="save_complete">Questionnaire enregistré</string>
@@ -123,5 +127,23 @@
 
     <!-- Detailed results-->
     <string name="date">Date: </string>
+
+
+    <!-- Info Popup-->
+    <string name="popup_what_flow_title">Qu\'est-ce que le Flow?</string>
+    <string name="popup_what_flow">Le <b>Flow</b> est un état mental atteint par une personne lorsqu\'elle est complètement plongée dans une activité et qu\'elle se trouve dans un <b>état maximal de concentration</b>, de plein engagement et de satisfaction dans son accomplissement. \n\nFondamentalement, le flow se caractérise par l\'<b>absorption totale</b> d\'une personne par son occupation. </string>
+
+    <string name="notsureyet">Le Flow est important à la fois parce qu\'il rend l\'instant présent <b>plus agréable</b> et parce qu\'il <b>renforce la confiance en soi</b> qui nous permet de développer des compétences et d\'apporter une contribution significative à l\'humanité.</string>
+
+    <string name="popup_why_flow_title">Pourquoi identifier vos conditions de Flow?</string>
+    <string name="popup_why_flow">Les personnes qui apprennent à contrôler leur expérience intérieure pourront <b>déterminer</b> la qualité de leur vie, ce qui est aussi proche que n\'importe lequel d\'entre nous peut être d\'<b>être heureux</b>.</string>
+
+    <string name="popup_further">"A lire:
+        \n\n - <a href="https://amzn.to/3g8ZD1K">La vérité sur ce qui nous motive: Tout ce qu\’il faut savoir pour transformer sa vie et aller de l\’avant !</a> de Daniel H Pink
+        \n\n - <a href="https://amzn.to/3g8mnPa">Vivre: La psychologie du bonheur</a> de Mihály Csíkszentmihályi"
+    </string>
+    <string name="popup_close">Fermer</string>
+    <string name="popup_further_title">Pour aller plus loin</string>
+
 
 </resources>

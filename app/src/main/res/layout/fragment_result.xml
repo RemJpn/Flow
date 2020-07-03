@@ -38,14 +38,14 @@
                     android:id="@+id/what_arrow_down"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@android:drawable/arrow_down_float"
+                    android:src="@drawable/ic_expand_more_black_24dp"
                     android:padding="10dp"
                     />
                 <ImageView
                     android:id="@+id/what_arrow_up"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@android:drawable/arrow_up_float"
+                    android:src="@drawable/ic_expand_less_black_24dp"
                     android:padding="10dp"
                     android:visibility="gone"
                     />
@@ -89,14 +89,14 @@
                     android:id="@+id/who_arrow_down"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@android:drawable/arrow_down_float"
+                    android:src="@drawable/ic_expand_more_black_24dp"
                     android:padding="10dp"
                     />
                 <ImageView
                     android:id="@+id/who_arrow_up"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@android:drawable/arrow_up_float"
+                    android:src="@drawable/ic_expand_less_black_24dp"
                     android:padding="10dp"
                     android:visibility="gone"
                     />
@@ -147,14 +147,14 @@
                     android:id="@+id/where_arrow_down"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@android:drawable/arrow_down_float"
+                    android:src="@drawable/ic_expand_more_black_24dp"
                     android:padding="10dp"
                     />
                 <ImageView
                     android:id="@+id/where_arrow_up"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@android:drawable/arrow_up_float"
+                    android:src="@drawable/ic_expand_less_black_24dp"
                     android:padding="10dp"
                     android:visibility="gone"
                     />
@@ -197,14 +197,14 @@
                     android:id="@+id/why_arrow_down"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@android:drawable/arrow_down_float"
+                    android:src="@drawable/ic_expand_more_black_24dp"
                     android:padding="10dp"
                     />
                 <ImageView
                     android:id="@+id/why_arrow_up"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@android:drawable/arrow_up_float"
+                    android:src="@drawable/ic_expand_less_black_24dp"
                     android:padding="10dp"
                     android:visibility="gone"
                     />
@@ -246,7 +246,7 @@
                     android:id="@+id/when_arrow_down"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@android:drawable/arrow_down_float"
+                    android:src="@drawable/ic_expand_more_black_24dp"
                     android:padding="10dp"
                     />
 
@@ -255,7 +255,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:src="@android:drawable/arrow_up_float"
+                    android:src="@drawable/ic_expand_less_black_24dp"
                     android:visibility="gone" />
                 <TextView
                     android:layout_width="wrap_content"
@@ -301,9 +301,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/detailed_results"
-                style="@style/buttons"
+                style="@style/button_details"
                 android:layout_marginTop="20dp"
-                android:drawableLeft="@drawable/details_18x18"
+                android:drawableLeft="@drawable/ic_assignment_black_24dp"
                 android:drawablePadding="5dp"
                 />
 
