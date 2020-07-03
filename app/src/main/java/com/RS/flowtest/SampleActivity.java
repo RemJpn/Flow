@@ -16,11 +16,9 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -45,7 +43,7 @@ import java.util.List;
 public class SampleActivity extends AppCompatActivity {
 
     public static SampleDatabase sampleDatabase;
-    private SaveTask mSave = null;
+
 
     //Layouts
     LinearLayout sample_layout_part1 = null;
@@ -174,22 +172,22 @@ public class SampleActivity extends AppCompatActivity {
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         //initialize part X layouts
-        sample_layout_part1 = (LinearLayout)findViewById(R.id.sample_layout_part1);
-        sample_layout_part2 = (LinearLayout)findViewById(R.id.sample_layout_part2);
-        sample_layout_part2_1 = (LinearLayout)findViewById(R.id.sample_layout_part2_1);
-        sample_layout_part3 = (LinearLayout)findViewById(R.id.sample_layout_part3);
-        sample_layout_part4 = (LinearLayout)findViewById(R.id.sample_layout_part4);
-        sample_layout_part5 = (LinearLayout)findViewById(R.id.sample_layout_part5);
-        sample_layout_part6 = (LinearLayout)findViewById(R.id.sample_layout_part6);
-        sample_layout_part7 = (LinearLayout)findViewById(R.id.sample_layout_part7);
-        sample_layout_part8 = (LinearLayout)findViewById(R.id.sample_layout_part8);
-        sample_layout_part9 = (LinearLayout)findViewById(R.id.sample_layout_part9);
-        sample_layout_part10 = (LinearLayout)findViewById(R.id.sample_layout_part10);
-        sample_layout_part11 = (LinearLayout)findViewById(R.id.sample_layout_part11);
-        sample_layout_part12 = (LinearLayout)findViewById(R.id.sample_layout_part12);
-        sample_layout_part13 = (LinearLayout)findViewById(R.id.sample_layout_part13);
-        sample_layout_part14 = (LinearLayout)findViewById(R.id.sample_layout_part14);
-        sample_layout_part15 = (LinearLayout)findViewById(R.id.sample_layout_part15);
+        sample_layout_part1 = findViewById(R.id.sample_layout_part1);
+        sample_layout_part2 = findViewById(R.id.sample_layout_part2);
+        sample_layout_part2_1 = findViewById(R.id.sample_layout_part2_1);
+        sample_layout_part3 = findViewById(R.id.sample_layout_part3);
+        sample_layout_part4 = findViewById(R.id.sample_layout_part4);
+        sample_layout_part5 = findViewById(R.id.sample_layout_part5);
+        sample_layout_part6 = findViewById(R.id.sample_layout_part6);
+        sample_layout_part7 = findViewById(R.id.sample_layout_part7);
+        sample_layout_part8 = findViewById(R.id.sample_layout_part8);
+        sample_layout_part9 = findViewById(R.id.sample_layout_part9);
+        sample_layout_part10 = findViewById(R.id.sample_layout_part10);
+        sample_layout_part11 = findViewById(R.id.sample_layout_part11);
+        sample_layout_part12 = findViewById(R.id.sample_layout_part12);
+        sample_layout_part13 = findViewById(R.id.sample_layout_part13);
+        sample_layout_part14 = findViewById(R.id.sample_layout_part14);
+        sample_layout_part15 = findViewById(R.id.sample_layout_part15);
 
         //set part x layout height to screen size
         DisplayMetrics displayMetrics = new DisplayMetrics();
@@ -233,124 +231,28 @@ public class SampleActivity extends AppCompatActivity {
         error_message = findViewById(R.id.error_data_incomplete);
         error_message.setVisibility(View.GONE);
 
-        /*
-        //initialize buttons + onclick
-        next_button_part1 = (Button)findViewById(R.id.next_button_part1);
-        next_button_part1.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-
-                sample_02_where = widget_02_where.getText().toString();
-                sample_03_what = widget_03_what.getText().toString();
-                sample_04_what_else = widget_04_what_else.getText().toString();
-                sample_05_mind = widget_05_mind.getText().toString();
-
-                // || sample_04_what_else.isEmpty() || sample_05_mind.isEmpty()
-                if(sample_02_where.isEmpty() || sample_03_what.isEmpty())
-                    error_message.setVisibility(View.VISIBLE);
-                else{
-                    error_message.setVisibility(View.GONE);
-                    sample_layout_part1.setVisibility(View.GONE);
-                    sample_layout_part2.setVisibility(View.VISIBLE);
-                }
-            }
-        });
-        next_button_part1.setVisibility(View.GONE);
-
-        Button next_button_part2 = (Button)findViewById(R.id.next_button_part2);
-        next_button_part2.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                // sample_12_alone_yes;  --- Done via onClicklistener
-                if (sample_12_alone_yes == false) // save the following only if not alone
-                {
-                    sample_15_spouse = widget_15_spouse.isChecked();
-                    sample_16_boss = widget_16_boss.isChecked();
-                    sample_17_coworker = widget_17_coworker.isChecked();
-                    sample_18_friends = widget_18_friends.isChecked();
-                    sample_19_girl_boyfriend = widget_19_girl_boyfriend.isChecked();
-                    sample_20_mother = widget_20_mother.isChecked();
-                    sample_21_father = widget_21_father.isChecked();
-                    sample_22_teacher = widget_22_teacher.isChecked();
-                    sample_23_classmate = widget_23_classmate.isChecked();
-                    sample_24_other = widget_24_other.isChecked();
-                    sample_25_children = widget_25_children.isChecked();
-                    if (widget_25_children.isChecked())
-                        sample_26_children_who = widget_26_children_who.getText().toString();
-                    sample_27_siblings = widget_27_siblings.isChecked();
-                    if (widget_27_siblings.isChecked())
-                        sample_28_siblings_who = widget_28_siblings_who.getText().toString();
-                }
-
-                if(alone_radio.getCheckedRadioButtonId()==-1)
-                    error_message.setVisibility(View.VISIBLE);
-                else {
-                    sample_layout_part2.setVisibility(View.GONE);
-                    sample_layout_part3.setVisibility(View.VISIBLE);
-                    error_message.setVisibility(View.GONE);
-                }
-            }
-        });
-        Button next_button_part3 = (Button)findViewById(R.id.next_button_part3);
-        next_button_part3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                next_part3();
-            }
-        });
-
-        Button next_button_part4 = (Button)findViewById(R.id.next_button_part4);
-        next_button_part4.setOnClickListener(sample_done_listener);
-
-        Button previous_button_part2 = (Button)findViewById(R.id.previous_button_part2);
-        previous_button_part2.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                error_message.setVisibility(View.GONE);
-                sample_layout_part1.setVisibility(View.VISIBLE);
-                sample_layout_part2.setVisibility(View.GONE);
-            }
-        });
-        Button previous_button_part3 = (Button)findViewById(R.id.previous_button_part3);
-        previous_button_part3.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                error_message.setVisibility(View.GONE);
-                sample_layout_part2.setVisibility(View.VISIBLE);
-                sample_layout_part3.setVisibility(View.GONE);
-            }
-        });
-        Button previous_button_part4 = (Button)findViewById(R.id.previous_button_part4);
-        previous_button_part4.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                error_message.setVisibility(View.GONE);
-                sample_layout_part3.setVisibility(View.VISIBLE);
-                sample_layout_part4.setVisibility(View.GONE);
-            }
-        });
-        */
-        next_button = (Button) findViewById(R.id.next_button);
+        //initialize buttons
+        next_button = findViewById(R.id.next_button);
         next_button.setOnClickListener(navListener);
         next_button.setVisibility(View.GONE);
-        previous_button = (Button)findViewById(R.id.previous_button);
+        previous_button = findViewById(R.id.previous_button);
         previous_button.setOnClickListener(navListener);
         previous_button.setVisibility(View.GONE);
-        done_button = (Button)findViewById(R.id.done_button);
+        done_button = findViewById(R.id.done_button);
         done_button.setOnClickListener(navListener);
         done_button.setVisibility(View.GONE);
 
         //Initialize widgets
         // 1st part
-        widget_02_where = (EditText)findViewById(R.id.widget_02_where);
+        widget_02_where = findViewById(R.id.widget_02_where);
         widget_02_where.addTextChangedListener(part1_textchanged);
-        widget_03_what= (EditText)findViewById(R.id.widget_03_what);
+        widget_03_what= findViewById(R.id.widget_03_what);
         widget_03_what.addTextChangedListener(part1_textchanged);
-        widget_04_what_else= (EditText)findViewById(R.id.widget_04_what_else);
-        widget_05_mind= (EditText)findViewById(R.id.widget_05_mind);
+        widget_04_what_else= findViewById(R.id.widget_04_what_else);
+        widget_05_mind= findViewById(R.id.widget_05_mind);
 
         // 2nd part
-        alone_radio = (RadioGroup)findViewById(R.id.alone_radio);
+        alone_radio = findViewById(R.id.alone_radio);
         alone_radio.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId){
@@ -362,7 +264,7 @@ public class SampleActivity extends AppCompatActivity {
                 }
             }
         });
-        widget_15_spouse = (CheckBox)findViewById(R.id.widget_15_spouse);
+        widget_15_spouse = findViewById(R.id.widget_15_spouse);
         widget_16_boss = findViewById(R.id.widget_16_boss);
         widget_17_coworker=  findViewById(R.id.widget_17_coworker);
         widget_18_friends=  findViewById(R.id.widget_18_friends);
@@ -705,7 +607,7 @@ public class SampleActivity extends AppCompatActivity {
                         error_message.setVisibility(View.GONE);
 
                         // launch save as an asynchronous task
-                        mSave = new SaveTask(SampleActivity.this);
+                        SaveTask mSave = new SaveTask(SampleActivity.this);
                         mSave.execute();
                     }
                     break;
@@ -737,8 +639,6 @@ public class SampleActivity extends AppCompatActivity {
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         final int height = displayMetrics.heightPixels;
-
-        final int translVal = direction*height;
 
         oldView.animate()
                 .translationYBy(-direction*height)
@@ -866,7 +766,7 @@ public class SampleActivity extends AppCompatActivity {
         }
 
         public void link (SampleActivity pActivity) {
-            mActivity = new WeakReference<SampleActivity>(pActivity);
+            mActivity = new WeakReference<>(pActivity);
         }
 
         public void save_sample(){
