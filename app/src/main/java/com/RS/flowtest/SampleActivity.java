@@ -742,7 +742,7 @@ public class SampleActivity extends AppCompatActivity {
                         if(MainActivity.DEV_MODE)
                             Log.d("Flow_Etape","next alarm set");
 
-                        if(sample_num %1 == 0)//%10 == 0
+                        if(sample_num %10 == 0)
                             intermediate_dialog();
                         else
                             finish();
