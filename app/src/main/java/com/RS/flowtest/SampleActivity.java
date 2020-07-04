@@ -724,7 +724,8 @@ public class SampleActivity extends AppCompatActivity {
                         if(MainActivity.DEV_MODE)
                             Log.d("Flow_Etape","Test completed, next alarm cancelled");
 
-                        survey_end_dialog();
+                        //survey_end_dialog();  currently deactivated since export does not work with gmail
+                        see_result_dialog();
 
                     }else //experience not completed yet
                     {
@@ -741,7 +742,7 @@ public class SampleActivity extends AppCompatActivity {
                         if(MainActivity.DEV_MODE)
                             Log.d("Flow_Etape","next alarm set");
 
-                        if(sample_num%10 == 0)//
+                        if(sample_num %1 == 0)//%10 == 0
                             intermediate_dialog();
                         else
                             finish();
@@ -982,6 +983,7 @@ public class SampleActivity extends AppCompatActivity {
             sampleDatabase.myDao().addSample(completeSample);
         }
 
+        //Currently export not working with gmail
         public void survey_end_dialog(){
             AlertDialog.Builder builder = new AlertDialog.Builder(SampleActivity.this)
                     .setTitle(getString(R.string.survey_end_title))

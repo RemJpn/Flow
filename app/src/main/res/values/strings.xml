@@ -126,6 +126,25 @@
     <string name="best_day">Flow index per day: </string>
     <string name="alone">Alone</string>
 
+    <string name="blank"></string>
+    <string name="sunday">Sun</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string-array name="weekdays">
+        <item>@string/blank</item>
+        <item>@string/sunday</item>
+        <item>@string/monday</item>
+        <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
+        <item>@string/thursday</item>
+        <item>@string/friday</item>
+        <item>@string/saturday</item>
+    </string-array>
+
     <!-- Detailed results-->
     <string name="date">Date: </string>
 

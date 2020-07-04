@@ -74,7 +74,9 @@ public class NotificationsActivity {
             SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SSS");
             if(MainActivity.DEV_MODE)
                 Log.d("Flow_Valeur", "Current date/time: " + formatter.format(nextAlarmCalendar.getTime()));
-            nextAlarmCalendar.setTimeInMillis(System.currentTimeMillis() + interval_random);
+
+            //nextAlarmCalendar.setTimeInMillis(System.currentTimeMillis() + interval_random);
+            nextAlarmCalendar.setTimeInMillis(System.currentTimeMillis() + 5*60*1000);
 
             String NextDate1 = formatter.format(nextAlarmCalendar.getTime());
 

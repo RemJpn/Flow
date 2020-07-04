@@ -125,6 +125,25 @@
     <string name="best_day">"Index de Flow par jour de la semaine: "</string>
     <string name="alone">Seul(e)</string>
 
+    <string name="blank"></string>
+    <string name="sunday">Dim</string>
+    <string name="monday">Lun</string>
+    <string name="tuesday">Mar</string>
+    <string name="wednesday">Mer</string>
+    <string name="thursday">Jeu</string>
+    <string name="friday">Ven</string>
+    <string name="saturday">Sam</string>
+    <string-array name="weekdays">
+        <item>@string/blank</item>
+        <item>@string/sunday</item>
+        <item>@string/monday</item>
+        <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
+        <item>@string/thursday</item>
+        <item>@string/friday</item>
+        <item>@string/saturday</item>
+    </string-array>
+
     <!-- Detailed results-->
     <string name="date">Date: </string>
 

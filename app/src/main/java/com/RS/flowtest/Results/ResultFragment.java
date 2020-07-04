@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.RS.flowtest.DataBase.SampleDatabase;
 import com.RS.flowtest.MainActivity;
 import com.RS.flowtest.R;
 import com.github.mikephil.charting.charts.BarChart;
@@ -69,6 +70,7 @@ public class ResultFragment extends Fragment {
     private TextView top_who;
     private TextView top_where;
     private TextView best_day;
+
 
     public ResultFragment() {
         // Required empty public constructor
@@ -168,7 +170,7 @@ public class ResultFragment extends Fragment {
         daysBarchart.getAxisRight().setEnabled(false);
         daysBarchart.getLegend().setEnabled(false);
 
-        final String[] weekdays = {"","Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"}; // Your List / array with String Values For X-axis Labels
+        final String[] weekdays = getResources().getStringArray(R.array.weekdays); // Your List / array with String Values For X-axis Labels
         // Set the value formatter
         XAxis xAxis = daysBarchart.getXAxis();
         xAxis.setValueFormatter(new IndexAxisValueFormatter(weekdays));

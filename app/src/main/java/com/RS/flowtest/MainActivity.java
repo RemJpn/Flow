@@ -33,7 +33,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static boolean DEV_MODE = false;
+    public static boolean DEV_MODE = true;
 
     public static SampleDatabase sampleDatabase;
 

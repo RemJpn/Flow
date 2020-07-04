@@ -45,7 +45,7 @@ public class ResultFragmentCollectionAdapter extends FragmentStatePagerAdapter {
         position = max_survey_id - position;
 
         //retrieving info from DB for sample "position", ordered by Descending score, in order to easily get information on most "in flow" conditions
-        List<DB_Entity> samples = MainActivity.sampleDatabase.myDao().getSamplesByScore(position);
+        List<DB_Entity> samples = ResultsActivity.sampleDatabase.myDao().getSamplesByScore(position);
 
         ArrayList<Integer> MondayScores = new ArrayList<Integer>() ;
         ArrayList<Integer> TuesdaysScores = new ArrayList<Integer>() ;
@@ -219,17 +219,7 @@ public class ResultFragmentCollectionAdapter extends FragmentStatePagerAdapter {
 
         int nb_of_samples = samples.size();
         if (nb_of_samples>2) {
-            /*
-            String messageLog = "Top ID / Score = \n";
-            int[] top_id = new int[3];
-            int[] top_score = new int[3];
-            for (int i = 0; i < 3; i++) {
-                top_id[i] = samples.get(i).getId();
-                top_score[i] = samples.get(i).getTotal_score();
-                messageLog = messageLog + top_id[i] + " / " + top_score[i]+"\n";
-            }
-            Log.d("Flow_values",messageLog);
-            */
+
             top_what = mContext.getString(R.string.top_what);
             top_where = mContext.getString(R.string.top_where);
             top_who = mContext.getString(R.string.top_who);
@@ -267,51 +257,6 @@ public class ResultFragmentCollectionAdapter extends FragmentStatePagerAdapter {
                 }
             }
 
-            /*String[] top_what = new String[3];
-            for (int i = 0; i < 3; i++) {
-                top_what[i] = samples.get(i).getSample_03_what();
-            }
-            String[] top_where = new String[3];
-            for (int i = 0; i < 3; i++) {
-                top_where[i] = samples.get(i).getSample_02_where();
-            }
-            String[] top_who = new String[3];
-            for (int i = 0; i < 3; i++) {
-                top_who[i]="";
-                if (samples.get(i).isSample_12_alone_yes())
-                    top_who[i] = mContext.getString(R.string.alone);
-                else {   //concatenate all info entered by user for given samples
-                    if (samples.get(i).isSample_15_spouse())
-                        top_who[i] = top_who[i] + mContext.getString(R.string.sample_15_spouse) + ", ";
-                    if (samples.get(i).isSample_16_boss())
-                        top_who[i] = top_who[i] + mContext.getString(R.string.sample_16_boss) + ", ";
-                    if (samples.get(i).isSample_17_coworker())
-                        top_who[i] = top_who[i] + mContext.getString(R.string.sample_17_coworker) + ", ";
-                    if (samples.get(i).isSample_18_friends())
-                        top_who[i] = top_who[i] + mContext.getString(R.string.sample_18_friends) + ", ";
-                    if (samples.get(i).isSample_19_girl_boyfriend())
-                        top_who[i] = top_who[i] + mContext.getString(R.string.sample_19_girl_boyfriend) + ", ";
-                    if (samples.get(i).isSample_20_mother())
-                        top_who[i] = top_who[i] + mContext.getString(R.string.sample_20_mother) + ", ";
-                    if (samples.get(i).isSample_21_father())
-                        top_who[i] = top_who[i] + mContext.getString(R.string.sample_21_father) + ", ";
-                    if (samples.get(i).isSample_22_teacher())
-                        top_who[i] = top_who[i] + mContext.getString(R.string.sample_22_teacher) + ", ";
-                    if (samples.get(i).isSample_23_classmate())
-                        top_who[i] = top_who[i] + mContext.getString(R.string.sample_23_classmate) + ", ";
-                    if (samples.get(i).isSample_24_other())
-                        top_who[i] = top_who[i] + mContext.getString(R.string.sample_24_other) + ", ";
-                    if (samples.get(i).isSample_25_children())
-                        top_who[i] = top_who[i] + mContext.getString(R.string.sample_25_children) + ", ";
-                    if (samples.get(i).isSample_27_siblings())
-                        top_who[i] = top_who[i] + mContext.getString(R.string.sample_27_siblings) + ", ";
-                }
-            }
-
-            Log.d("Flow_values", "Top what = \n" + top_what[0] + "\n" + top_what[1] + "\n" + top_what[2] + "\nTop where = \n" + top_where[0] + "\n" + top_where[1] + "\n" + top_where[2]);
-            Log.d("Flow_values", "Top who = \n" + top_who[0] + "\n" + top_who[1] + "\n" + top_who[2]);
-            */
-
         }
 
         // Provide the values to a bundle, to be used in ResultFragment
@@ -335,7 +280,7 @@ public class ResultFragmentCollectionAdapter extends FragmentStatePagerAdapter {
     public int getCount() {
         // Get max survey id registered in DB
 
-        List<DB_Entity> samples = MainActivity.sampleDatabase.myDao().getSamples();
+        List<DB_Entity> samples = ResultsActivity.sampleDatabase.myDao().getSamples();
         for(DB_Entity spl : samples)
         {
             int survey_id = spl.getSurvey_num();
@@ -350,7 +295,7 @@ public class ResultFragmentCollectionAdapter extends FragmentStatePagerAdapter {
 
         position = max_survey_id - position;
 
-        List<DB_Entity> samples = MainActivity.sampleDatabase.myDao().getSamplesFromSurveyId(position);
+        List<DB_Entity> samples = ResultsActivity.sampleDatabase.myDao().getSamplesFromSurveyId(position);
 
         if (samples.size() != 0) {
 

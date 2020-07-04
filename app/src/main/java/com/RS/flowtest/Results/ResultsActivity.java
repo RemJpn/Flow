@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
+import com.RS.flowtest.DataBase.SampleDatabase;
 import com.RS.flowtest.R;
 
 
@@ -15,11 +16,15 @@ public class ResultsActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private ResultFragmentCollectionAdapter adapter;
 
+    //instance of the database in Result Activity, so that results can be viewed without going through MainActivity
+    public static SampleDatabase sampleDatabase;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.results_screen);
+        sampleDatabase = SampleDatabase.getInstance(getApplicationContext());
 
         //initialize toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
